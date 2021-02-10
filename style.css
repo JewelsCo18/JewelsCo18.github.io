@@ -1,0 +1,15 @@
+.head{
+    background-color:#d2f5fc; 
+}
+
+.title{
+    font-family: 'Brush Script MT';
+    color:black; 
+    text-align: center; 
+    font-size: 48;
+}
+
+.homework{
+    background-color: black; 
+    color: white; 
+}
