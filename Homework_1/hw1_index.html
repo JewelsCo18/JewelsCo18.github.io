@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html style = "
+                background-image: url('/Users/juleskho/Desktop/Intro to Web Design/WD_HW1/eye_loop.gif');
+                background-size: 100px;"> 
+
+    <!--Style script that will allow for the image overlay
+        would have loved to put a fade effect here but I couldn't figure out how to do it-->
+    <style>
+        .pic {
+            position: center;
+            vertical-align: auto;
+            margin-left: 500px;
+            object-fit: cover;
+        }
+        .pic .img-top {
+            display: none;
+            position: absolute;
+            top: 180px;
+            left: 500px;
+            z-index: 99;
+        }
+        .pic:hover .img-top {
+            display: inline;   
+        }
+    </style>
+
+    <body>
+
+        <h1 style="font-size:70px; text-align: center; color: #8ed1d1; font-family: 'Brush Script MT'; "> 
+            The Cycle of Envy
+        </h1>
+
+        <div class="pic">
+            <img src="/Users/juleskho/Desktop/Intro to Web Design/WD_HW1/nude_picture.jpg" height = "75%" class="img-top" alt="Front">
+            <img src="/Users/juleskho/Desktop/Intro to Web Design/WD_HW1/victorian_picture.jpg" width = "45%" height = "45%" alt="Back">
+        </div>
+
+        <audio controls autoPlay id="myaudio" style = "margin-left: 550px">
+            <source src="/Users/juleskho/Desktop/Intro to Web Design/WD_HW1/MM.mp3">
+        </audio>
+
+    </div>"
+    
+    </body>
+
+</html>
+
+<script>
+    //script to make the audio work NOTE: autoplay will not work for Chrome, only on Safari
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.3;
+</script>
