@@ -2,9 +2,43 @@ h1 {
     font-size:70px; 
     text-align: center; 
     color: white; 
-    font-family: 'Arial';
+    font-family: 'Impact';
+    letter-spacing: 5px;
+}
+
+h2{
+    font-size: 12px; 
+    color: black; 
+    text-align: center; 
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    display: none; 
+    margin-bottom:25px; 
+    margin-top: 25px;
+    background-color: lightgrey; 
+    background-image: url('/Homework_2/optical.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -450px;
+    opacity:0.5;
+    border-style:dotted;
+    border-color: white;
+}
+
+h1:hover + div {
+    display: block;
+}
+
+h1:hover {
+    color:maroon; 
 }
 
 body {
     background-image: url('/Homework_2/space.jpg'); 
+    background-position: static; 
 }
