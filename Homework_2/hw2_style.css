@@ -1,0 +1,10 @@
+h1{
+    font-size:70px; 
+    text-align: center; 
+    color: white; 
+    font-family: 'Arial';
+}
+
+body{
+    background-image: url('/Users/juleskho/Desktop/Intro to Web Design/WD_HW2/space.jpg');
+}
