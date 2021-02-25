@@ -9,11 +9,98 @@
     </head>
 
     <body>
-        <h1>
-            TBD
-        </h1>
+        <div class = "Header">
+            <h1> Makoto Portrait + </h1>
+            <br>
+
+            <!--FIX THIS AREA-->
+            <a href = "Homework_3/wireframe.html" style = "color:#f7e05d"> 
+                <h1>Wireframes</h1>
+            </a>
+            <audio controls autoPlay id="myaudio" style = "margin-left: 550px">
+                <source src="/Homework_3/mario.mp3">
+            </audio>
+        </div>
+
+        <div class = "column">
+            
+            <div class = "square_box">
+                <div class = "square riolu" onclick="showHair()"><h2>?</h2></div>
+                <div class = "square2 riolu"><h3>?</h3></div>
+                <div class = "square3 riolu"><h4>?</h4></div>
+            </div>
+
+            <!-- <h1>Vocaloid</h1> -->
+            <div class = "square_box">
+                <div class = "square vocaloid" onclick="showFace()"><h2>?</h2></div>
+                <div class = "square2 vocaloid"><h3>?</h3></div>
+                <div class = "square3 vocaloid"><h4>?</h4></div>
+            </div>
+
+            <!--<h1>Madoka Magica</h1> -->
+            <div class = "square_box">
+                <div class = "square madoka" onclick="showLeftEye()"><h2>?</h2></div>
+                <div class = "square2 madoka"><h3>?</h3></div>
+                <div class = "square3 madoka"><h4>?</h4></div>
+            </div>
+
+            <!-- <h1>Japanese Culture</h1> -->
+            <div class = "square_box">
+                <div class = "square japan" onclick="showRightEye()"><h2>?</h2></div>
+                <div class = "square2 japan"><h3>?</h3></div>
+                <div class = "square3 japan"><h4>?</h4></div>
+            </div>
+ 
+            <!-- <h1>My Little Pony</h1> -->
+            <div class = "square_box">
+                <div class = "square twilight" onclick="showMouth()"><h2>?</h2></div>
+                <div class = "square2 twilight"><h3>?</h3></div>
+                <div class = "square3 twilight"><h4>?</h4></div>
+            </div>
+
+            <!-- <h1>Family</h1> -->
+            <div class = "square_box">
+                <div class = "square teehee" onclick="location.href='https://www.youtube.com/watch?v=QtBDL8EiNZo';"><h2>?</h2></div>
+                <div class = "square2 teehee"><h3>?</h3></div>
+                <div class = "square3 teehee"><h4>?</h4></div>
+            </div>
+
+        </div>
+
+        <div class = "container">
+            <div class = "poof" id = "hair" style="opacity:0;">
+                <div class="smiley" id = "face" style="opacity:0;">
+                    <div class="left-eye eye" id = "left eye" style="opacity:0;">&nbsp;</div>
+                    <div class="right-eye eye" id = "right eye" style="opacity:0;">&nbsp;</div>
+                    <div class = "mustache" id = "mario" style = "opacity:0;">&nbsp;</div>"
+                    <div class="mouth" id = "mouse" style="opacity:0;">&nbsp;</div>
+                </div>
+            </div>
+            <br>
+        </div>        
 
     </body>
 
 </html>
+
+<script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.3;
+
+    function showFace() {
+        document.getElementById('face').style.opacity = "1";
+    }
+    function showLeftEye() {
+        document.getElementById('left eye').style.opacity = "1";
+    }
+    function showRightEye() {
+        document.getElementById('right eye').style.opacity = "1";
+    }
+    function showHair() {
+        document.getElementById('hair').style.opacity = "1";
+    }
+    function showMouth() {
+        document.getElementById('mouse').style.opacity = "1";
+    }
+</script>
 

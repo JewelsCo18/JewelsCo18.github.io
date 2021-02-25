@@ -1,0 +1,231 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+body{
+  background-image: url('/Homework_3/background.jpg');
+  background-repeat: no-repeat; 
+  background-position:center; 
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.photo{
+  width: 50px; 
+  height:50px; 
+}
+
+.column{
+    column-count: 6;
+    column-gap: 10px;
+}
+.square_box{
+    position: relative;
+    width: 206px;
+    height: 190px;
+    margin: 0px auto;
+  }
+  
+.square{
+    width:100px;
+    height:100px;
+    background:#f7e05d;
+    border:solid 2px #FFF;
+    float:left; 
+    position: absolute;
+    top: 43px;
+  }
+
+.square2 {
+  width:50px;
+  height:100px;
+  background:#f7e05d;
+  border:solid 2px #FFF;
+  float:left;
+  transform: skew(180deg,140deg);
+  position: absolute;
+  left:102px;
+  top: 22px;
+}
+.square3 {
+  width:60px;
+  height:80px;
+  background:#f7e05d;
+  border:solid 2px #FFF;
+  float:left;
+  transform: rotate(130deg) translate(-40px, -20px) skew(40deg, 10deg);
+  position: absolute;
+  left: 0px;
+  }
+
+.riolu:hover{
+  background-image: url("/Homework_3/riolu.png"); 
+  background-size:100%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: 0.5s; 
+
+}
+
+.vocaloid:hover{
+  background-image: url("/Homework_3/vocaloid.png"); 
+  background-size:100%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: 0.5s; 
+}
+
+.madoka:hover{
+  background-image: url("/Homework_3/madoka.png"); 
+  background-size:100%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: 0.5s; 
+}
+
+.japan:hover{
+  background-image: url("/Homework_3/olympics.png"); 
+  background-size:100%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: 0.5s; 
+}
+
+.twilight:hover{
+  background-image: url("/Homework_3/mlp.png"); 
+  background-size:100%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: 0.5s; 
+}
+
+.teehee:hover{
+  background-image: url("/Homework_3/troll.png"); 
+  background-size:100%; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  transition: 0.5s; 
+}
+
+h2:hover{
+  font-size:0px; 
+  color: #f7e05d; 
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #f7e05d;
+}
+
+h3:hover{
+  font-size:0px; 
+  color: #f7e05d; 
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #f7e05d;
+}
+
+h4:hover{
+  font-size:0px; 
+  color: #f7e05d; 
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: #f7e05d;
+}
+
+h2{
+  color: white; 
+  padding-left: 40px; 
+  padding-top: -30px;
+  margin-top: 15px; 
+  font-size:55px;
+  font-family: "Impact";  
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ac9c40;
+}
+
+h3 {
+    color: white; 
+    padding-left: 18px; 
+    padding-top: -5px;
+    font-size: 36px;
+    font-family: "Impact";  
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ac9c40;
+}
+
+h4 {
+    color: white; 
+    padding-left: 18px; 
+    padding-top: 20px; 
+    margin-top: 0px;
+    font-size: 36px;
+    font-family: "Impact";  
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ac9c40;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poof{
+  height: 325px;
+	width: 450px;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+  -webkit-border-radius: 200px; 
+  background-color: black;
+}
+
+.smiley {
+	height: 350px;
+  width: 350px;
+  left: 45px; 
+  top: 100px; 
+	position: relative;
+	border-radius: 150px;
+	-moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+}
+.smiley .eye {
+	width: 100px; 
+  height: 300px;  
+	border: solid 5px #000;
+  border-color: #000 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+	position: absolute;
+}
+
+.left-eye {
+  top: 90px;
+  left: 30px;
+}
+.right-eye {
+	top: 90px;
+  right: 30px;
+}
+
+.mouth {
+	-webkit-border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	height: 70px;
+	background-color: #000;
+	position: absolute;
+	width: 150px;
+	left: 100px;
+	top: 230px;
+	
+}
+.smiley {
+	background-color: #FFCC99;
+}
