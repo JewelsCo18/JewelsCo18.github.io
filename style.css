@@ -24,6 +24,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px; 
+    word-wrap: break-word;
 }
 
 .homework:hover {
@@ -38,7 +39,7 @@ a {
 }
 
 .grid-item {
-    background-color: rgba(30, 57, 148, 0.8);
+    /* background-color: rgba(30, 57, 148, 0.8); */
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 15px;

@@ -20,6 +20,7 @@
             <audio controls autoPlay id="myaudio" style = "margin-left: 550px">
                 <source src="/Homework_3/mario.mp3">
             </audio>
+            <audio id="ding" src="coin.mp3" preload="auto"></audio>
         </div>
 
         <div class = "column">
@@ -89,18 +90,23 @@
 
     function showFace() {
         document.getElementById('face').style.opacity = "1";
+        document.getElementById("ding").play(); 
     }
     function showLeftEye() {
         document.getElementById('left eye').style.opacity = "1";
+        document.getElementById("ding").play(); 
     }
     function showRightEye() {
         document.getElementById('right eye').style.opacity = "1";
+        document.getElementById("ding").play(); 
     }
     function showHair() {
         document.getElementById('hair').style.opacity = "1";
+        document.getElementById("ding").play(); 
     }
     function showMouth() {
         document.getElementById('mouse').style.opacity = "1";
+        document.getElementById("ding").play(); 
     }
 </script>
 
