@@ -9,7 +9,7 @@ h1{
 }
 
 body{
-  background-image: url('/Homework_3/background.jpg');
+  background-image: url('background.jpg');
   background-repeat: no-repeat; 
   background-position:center; 
   background-size: cover;
@@ -67,7 +67,7 @@ body{
   }
 
 .riolu:hover{
-  background-image: url("/Homework_3/riolu.png"); 
+  background-image: url("riolu.png"); 
   background-size:100%; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -75,7 +75,7 @@ body{
 }
 
 .vocaloid:hover{
-  background-image: url("/Homework_3/vocaloid.png"); 
+  background-image: url("vocaloid.png"); 
   background-size:100%; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -83,7 +83,7 @@ body{
 }
 
 .madoka:hover{
-  background-image: url("/Homework_3/madoka.png"); 
+  background-image: url("madoka.png"); 
   background-size:100%; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -91,7 +91,7 @@ body{
 }
 
 .japan:hover{
-  background-image: url("/Homework_3/olympics.png"); 
+  background-image: url("olympics.png"); 
   background-size:100%; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -99,7 +99,7 @@ body{
 }
 
 .twilight:hover{
-  background-image: url("/Homework_3/mlp.png"); 
+  background-image: url("mlp.png"); 
   background-size:100%; 
   background-repeat: no-repeat; 
   background-position: center; 
@@ -107,7 +107,7 @@ body{
 }
 
 .teehee:hover{
-  background-image: url("/Homework_3/troll.png"); 
+  background-image: url("troll.png"); 
   background-size:100%; 
   background-repeat: no-repeat; 
   background-position: center; 
