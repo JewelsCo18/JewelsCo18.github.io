@@ -1,48 +1,59 @@
 body {
-    background-color: #8ed1d1;
+    background-color: black;
 }
 
-h1 {
-    font-size:70px; 
-    text-align: center; 
-    color: black; 
-    font-family: 'Arial';
+.header{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
-a {
-    font-family:'Arial';
-    color: white; 
+.logo_pic{
+    width:10%; 
+    height: 10%; 
+}
+
+.homework_nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .homework {
+    padding-top: 20px; 
+    padding-bottom: 0px; 
     text-align: center; 
-    background-color: black;
-    width: 60%;
-    border: 5px solid navy;
-    padding: 30px;
-    margin-top: 30px; 
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px; 
-    word-wrap: break-word;
+    color: white; 
+    border-radius: 10px; 
+    width: 50px; 
+    height: 50px; 
+    font-size: 20px; 
+    font-family:Impact; 
 }
 
-.homework:hover {
-    background-color: lightgrey;
+.homework:hover{
+    background-color: white;
+    color: black; 
 }
 
-.grid-container {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+.subHead{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white; 
+    font-size: 20px; 
+    font-family:Impact; 
 }
 
-.grid-item {
-    /* background-color: rgba(30, 57, 148, 0.8); */
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 15px;
-    height: 300px; 
-    text-align: center;
+.photo_nav {
+    display: flex; 
+    justify-content: space-around;
+    align-items:center;
+}
+
+.picture{
+    width: 50%; 
+    height: 50%; 
+    border-color: white;
+    border-style:solid; 
 }

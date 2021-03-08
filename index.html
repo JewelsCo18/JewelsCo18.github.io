@@ -15,38 +15,86 @@
 
     <body>
 
-        <h1> 
-            Introduction to Web Design - Jules Kho
-        </h1>
+        <div class = "header">
 
-        <div class="grid-container">
-
-            <div class="grid-item">
-                <div class = "homework">
-                    <a href = "Homework_1/hw1_index.html"> 
-                        Ways to Seeing Response
-                    </a>
-                </div>
-            </div>
-
-            <div class="grid-item">
-                <div class = "homework">
-                    <a href = "Homework_2/hw2_index.html"> 
-                        Long Live the Web Response
-                    </a>
-                </div>
-            </div>
-
-            <div class="grid-item">
-                <div class = "homework">
-                    <a href = "Homework_3/hw3_index.html"> 
-                        Makoto Brown Portrait
-                    </a>
-                </div>
-            </div>
+            <img src = "logo.jpg" class = "logo_pic">
 
         </div>
+
+        <div class = "homework_nav">
+
+            <div class = "homework" onclick = "showHW1()" id = "homework1"> 1 </div>
+            <div class = "homework" onclick = "showHW2()" id = "homework2"> 2 </div>
+            <div class = "homework" onclick = "showHW3()" id = "homework3"> 3 </div>
+            <div class = "homework" onclick = "showHW4()" id = "homework4"> 4 </div>
+        </div>
+
+        <div class = "content">
+            <div class = "subHead">
+                <h1 id = "title"> Ways To Seeing </h1>
+            </div>
+
+            <div class = "photo_nav">
+                <img src = "1.png" class = "picture" id = "currPic">
+            </div>
+            
+        </div>
+
     
     </body>
 
 </html>
+
+<script>
+
+    function showHW1() {
+        document.getElementById('title').innerText = "Ways To Seeing";
+        clear()
+        document.getElementById('currPic').src = "1.png"; 
+        document.getElementById('homework1').style.color = "#2DC9BC";
+        document.getElementById('homework1').style.fontSize = "30px";
+        document.getElementById('homework1').style.borderStyle = "dashed";
+        document.getElementById('homework1').style.borderColor = "#2DC9BC";
+    }
+    function showHW2() {
+        document.getElementById('title').innerText = "Long Live the Web";
+        clear(); 
+        document.getElementById('currPic').src = "2.png"; 
+        document.getElementById('homework2').style.color = "#2DC9BC";
+        document.getElementById('homework2').style.fontSize = "30px";
+        document.getElementById('homework2').style.borderStyle = "dashed";
+        document.getElementById('homework2').style.borderColor = "#2DC9BC";
+    }
+    function showHW3() {
+        document.getElementById('title').innerText = "Makoto Self Picture";
+        clear(); 
+        document.getElementById('currPic').src = "3.png"; 
+        document.getElementById('homework3').style.color = "#2DC9BC";
+        document.getElementById('homework3').style.fontSize = "30px";
+        document.getElementById('homework3').style.borderStyle = "dashed";
+        document.getElementById('homework3').style.borderColor = "#2DC9BC";
+    }
+    function showHW4() {
+        document.getElementById('title').innerText = "Into Time";
+        clear(); 
+        document.getElementById('currPic').src = "4.png"; 
+        document.getElementById('homework4').style.color = "#2DC9BC";
+        document.getElementById('homework4').style.fontSize = "30px";
+        document.getElementById('homework4').style.borderStyle = "dashed";
+        document.getElementById('homework4').style.borderColor = "#2DC9BC";
+    }
+    function clear(){
+        document.getElementById('homework1').style.color = "white";
+        document.getElementById('homework2').style.color = "white";
+        document.getElementById('homework3').style.color = "white";
+        document.getElementById('homework4').style.color = "white";
+        document.getElementById('homework1').style.fontSize = "20px";
+        document.getElementById('homework2').style.fontSize = "20px";
+        document.getElementById('homework3').style.fontSize = "20px";
+        document.getElementById('homework4').style.fontSize = "20px";
+        document.getElementById('homework1').style.borderStyle = "hidden";
+        document.getElementById('homework2').style.borderStyle = "hidden";
+        document.getElementById('homework3').style.borderStyle = "hidden";
+        document.getElementById('homework4').style.borderStyle = "hidden";
+    }
+</script>
