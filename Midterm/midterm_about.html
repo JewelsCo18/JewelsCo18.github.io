@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="midterm_about_style.css"/>
+    </head>
+
+    <body>
+
+        <div class = "header"> 
+            <div class="neons"> 
+                <h1 style = "font-size: 48px;"><em>The Common Vernacular</em></h1>
+                <h1><em>a commentary on the rise of slang</em></h1>
+            </div>
+        </div>
+
+        <br>
+
+        <div class = "presentation" >
+            <div class = "nav left"> 
+                <div class = "content" onclick = "showInspiration()"> Inspiration </div>
+                <div class = "content" onclick = "showDecline()"> Decline of Words </div>
+                <div class = "content" onclick = "showConfusion()"> Confusion and Disbelief </div>
+                <div class = "content" onclick = "showNoComplaints()"> Why I Can't Complain </div>
+            </div>
+            <div class = "slide right">
+                <img src = "moon.png" class = "photo" id = "currPic">
+                <div class = "paragraph" id = "text">
+                    PUT THOUGHTS ABOUT INSPIRATION HERE
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class = "button" onclick="location.href = 'midterm_index.html'">back</div>
+    </body>
+
+</html>
+
+<script>
+    function showInspiration() {
+        document.getElementById('text').innerText = "PUT THOUGHTS ABOUT INSPIRATION HERE";
+        document.getElementById('currPic').src = "moon.png"; 
+    }
+
+    function showDecline() {
+        document.getElementById('text').innerText = "PUT THOUGHTS ABOUT DECLINE HERE";
+        document.getElementById('currPic').src = "decline.png"; 
+    }
+
+    function showConfusion() {
+        document.getElementById('text').innerText = "PUT THOUGHTS ABOUT CONFUSION HERE";
+        document.getElementById('currPic').src = "slang.png"; 
+    }
+
+    function showNoComplaints() {
+        document.getElementById('text').innerText = "PUT THOUGHTS ABOUT ARTICLE OF NO COMPLAINTS HERE";
+        document.getElementById('currPic').src = "words.png"; 
+    }
+</script>

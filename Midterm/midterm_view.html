@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="midterm_view_style.css"/>
+    </head>
+
+    <body>
+
+        <div class = "header"> 
+            <div class="neons"> 
+                <h1 style = "font-size: 48px;"><em>The Common Vernacular</em></h1>
+                <h1><em>a commentary on the rise of slang</em></h1>
+            </div>
+        </div>
+
+        <br>
+
+        <div class = "language" onclick = "loopArray()">TRANSLATE</div>
+
+        <p style = "color: white; display: flex; align-items: center; justify-content: center; font-style: italic; ">Courtesy of Google Translate</p>
+                
+        <div class = "sentence">
+            Hello, friend. How are you? I hope you enjoy this amazing website. 
+        </div>
+
+        <div class = "button" onclick="location.href = 'midterm_index.html'">back</div>
+
+    </body>
+
+</html>
+
+<script>
+    languageArray =  
+        [
+        "Holla, cousin.  How art thee? i desire thee enjoyeth this most wonderous website.",
+        "Hey! What's gucci? Enjoy the site it's tuff af.",
+        "Hola, amigo. ¿Cómo estás? Espero que disfrutes de este increíble sitio web.",
+        "朋友你好。你好吗？希望您喜欢这个很棒的网站。",
+        "Kumusta Kaibigan. Kumusta ka? Inaasahan kong nasiyahan ka sa kamangha-manghang website.",
+        "Salut l'ami. Comment vas-tu? J'espère que vous apprécierez ce site Web incroyable.",
+        "Salve amicus. Quid agis? Spero te frui miris huius website.",
+        "Γεια σου φίλε. Πώς είσαι; Ελπίζω να απολαύσετε αυτόν τον καταπληκτικό ιστότοπο.",
+        "Hello, friend. How are you? I hope you enjoy this amazing website. "
+        ]
+
+    var i = 0; 
+
+    function loopArray() { 
+        if (i >= languageArray.length){
+            i = 0; 
+        }
+
+        document.querySelector('.sentence').innerHTML = languageArray[i]; 
+        document.querySelector('.sentence').style.transition = "all 2s ease"; 
+        i++; 
+    } 
+</script>

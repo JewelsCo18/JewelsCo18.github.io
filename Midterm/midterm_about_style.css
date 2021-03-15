@@ -1,0 +1,98 @@
+body { 
+    background-color: black; 
+
+}
+
+.button { 
+    margin-top: 30px; 
+    width: 100px; 
+    height: 75px; 
+    font-size: 36px; 
+    font-family: 'Copperplate'; 
+    text-shadow: 1px 1px 2px rgb(0, 251, 255), 0 0 0.2em #00fab8; 
+}
+
+.button:hover { 
+    color: white; 
+}
+
+.neons {
+    text-align: center;
+}
+
+.neons h1 {
+    font-family: 'Copperplate'; 
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold, italic;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate; 
+}
+
+@-webkit-keyframes glow {
+    from {
+     color: #fff;
+   text-shadow: 0 0 10px #00fab8, 0 0 20px #00fab8, 0 0 30px #00fab8, 0 0 40px #00fab8, 0 0 50px #00fab8, 0 0 60px #00fab8, 0 0 70px #00fab8, 0 0 90px #00fab8;
+ }
+ 
+ to {
+    color: gray;
+   text-shadow: 0 0 20px #00fab8, 0 0 30px #00fab8, 0 0 40px #00fab8, 0 0 50px #00fab8, 0 0 60px #00fab8, 0 0 70px #00fab8, 0 0 80px #00fab8, 0 1 90px #00fab8;
+ }
+}
+
+.presentation {
+    height: 70vh; 
+    display:flex; 
+    justify-content: space-between;
+}
+
+.nav {
+    display:flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.content { 
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+
+    color: white;
+    font-family: 'Copperplate';
+    font-size: 20px; 
+    width: 200px; 
+    height: 100px; 
+    text-align: center; 
+    vertical-align: center; 
+    background-color: black; 
+    border-radius: 20%; 
+    margin-left: 30px; 
+    box-shadow: 3px 3px white, -1em 0 .4em #00fab8;
+}
+
+.photo {
+    width : 500px; 
+    height: 400px; 
+}
+
+.paragraph {
+    color: white; 
+    text-align: center; 
+}
+
+.slide {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.left { 
+    width: 20%; 
+}
+
+.right { 
+    width : 80%; 
+}

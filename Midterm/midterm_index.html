@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="midterm_style.css"/>
+    </head>
+
+    <body>
+
+        <!-- 
+            Idea: Have words flowing around the screen where every couple seconds 
+        -->
+
+        <div class = "text_container"> 
+
+            <div class="neons">
+                <h1 style = "font-size: 48px;"><em>The Common Vernacular</em></h1>
+                <h1><em>a commentary on the rise of slang</em></h1>
+
+                <br>
+                <br>
+
+                <div class = "row"> 
+
+                    <div class = "button" onclick="location.href = 'midterm_about.html'"> 
+                        About
+                    </div>
+        
+                    <div class = "button" onclick="location.href = 'midterm_view.html'"> 
+                        View
+                    </div>
+    
+                </div>
+
+            </div>
+
+            
+
+            <h3 class = 'move lit'> "lit" </h3>
+            <h3 class = 'move extra'> "extra" </h3>
+            <h3 class = 'move salty'> "salty" </h3>
+            <h3 class = 'move shook'> "shook" </h3>
+            <h3 class = 'move gucci'> "gucci" </h3>
+            <h3 class = 'move mood'> "mood" </h3>
+            <h3 class = 'move OG'> "OG" </h3>
+            <h3 class = 'move brick'> "brick" </h3>
+            <h3 class = 'move tuff'> "tuff" </h3>
+            <h3 class = 'move thot'> "thot" </h3>
+            <h3 class = 'move periodt'> "periodt" </h3>
+            <h3 class = 'move fit'> "fit" </h3>
+            <h3 class = 'move yeet'> "yeet" </h3>
+            <h3 class = 'move cap'> "cap" </h3>
+            <h3 class = 'move cancel'> "cancel" </h3>
+        </div>
+
+
+    </body>
+
+</html>    
+
+<script>
+
+    $(document).ready(function(){
+        animateDiv('.lit');
+        animateDiv('.extra');
+        animateDiv('.salty');
+        animateDiv('.shook');
+        animateDiv('.gucci');
+        animateDiv('.mood');
+        animateDiv('.OG');
+        animateDiv('.brick');
+        animateDiv('.tuff');
+        animateDiv('.thot');
+        animateDiv('.periodt');
+        animateDiv('.fit');
+        animateDiv('.yeet');
+        animateDiv('.cap');
+        animateDiv('.cancel');
+    });
+
+    function makeNewPosition(){
+        
+        // Get viewport dimensions (remove the dimension of the div)
+        var h = $(window).height() - 20;
+        var w = $(window).width();
+        
+        var nh = Math.floor(Math.random() * h);
+        var nw = Math.floor(Math.random() * w);
+        
+        return [nh,nw];    
+        
+    }
+
+    function animateDiv(myclass){
+        var newq = makeNewPosition();
+        $(myclass).animate({ top: newq[0], left: newq[1] }, 2500,   function(){
+        animateDiv(myclass);        
+        });
+        
+    };
+
+</script>

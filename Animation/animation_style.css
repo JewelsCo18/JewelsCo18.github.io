@@ -1,0 +1,49 @@
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Codystar';
+   background: black;
+}
+
+.container { 
+    width: 100vh; 
+    height: 100vh; 
+    background-image: linear-gradient(45deg, white, #87f244, #0ae0e4, #e7d507, #980eee, black);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.neons {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.neons h1 {
+    font-family: Impact; 
+    font-size: 9rem;
+    text-align: center;
+    font-weight: bold, italic;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate; 
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #db3fe0, 0 0 20px #db3fe0, 0 0 30px #db3fe0, 0 0 40px #db3fe0, 0 0 50px #db3fe0, 0 0 60px #db3fe0, 0 0 70px #db3fe0, 0 0 90px #db3fe0;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #db3fe0, 0 0 30px #db3fe0, 0 0 40px #db3fe0, 0 0 50px #db3fe0, 0 0 60px #db3fe0, 0 0 70px #db3fe0, 0 0 80px #db3fe0, 0 1 90px #db3fe0;
+  }
+}
+
+.joy {
+    -webkit-animation: 3s linear 0s infinite alternate move_snoops;
+          animation: 3s linear 0s infinite alternate move_snoops;
+}
+
+@-webkit-keyframes move_snoops { from { margin-left: -30%; } to { margin-left: 100%; }  }
+        @keyframes move_snoops { from { margin-left: -30%; } to { margin-left: 100%; }  }

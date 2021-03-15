@@ -27,6 +27,7 @@
             <div class = "homework" onclick = "showHW2()" id = "homework2"> 2 </div>
             <div class = "homework" onclick = "showHW3()" id = "homework3"> 3 </div>
             <div class = "homework" onclick = "showHW4()" id = "homework4"> 4 </div>
+            <div class = "homework" onclick = "showMidterm()" id = "midterm"> 5 </div>
         </div>
 
         <div class = "content">
@@ -57,6 +58,7 @@
         document.getElementById('homework1').style.fontSize = "30px";
         document.getElementById('homework1').style.borderStyle = "dashed";
         document.getElementById('homework1').style.borderColor = "#2DC9BC";
+    
     }
     function showHW2() {
         document.getElementById('title').innerText = "Long Live the Web";
@@ -83,6 +85,16 @@
         document.getElementById('title').href = "Homework_4/slide1_index.html";
         clear(); 
         document.getElementById('currPic').src = "4.png"; 
+        document.getElementById('homework4').style.color = "#2DC9BC";
+        document.getElementById('homework4').style.fontSize = "30px";
+        document.getElementById('homework4').style.borderStyle = "dashed";
+        document.getElementById('homework4').style.borderColor = "#2DC9BC";
+    }
+    function showMidterm() {
+        document.getElementById('title').innerText = "The Common Vernacular";
+        document.getElementById('title').href = "Midterm/midterm_index.html";
+        clear(); 
+        document.getElementById('currPic').src = "5.png"; 
         document.getElementById('homework4').style.color = "#2DC9BC";
         document.getElementById('homework4').style.fontSize = "30px";
         document.getElementById('homework4').style.borderStyle = "dashed";

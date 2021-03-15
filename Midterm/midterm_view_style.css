@@ -1,0 +1,71 @@
+body { 
+    background-color: black; 
+
+}
+
+.language { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    color:white; 
+    font-size: 36px; 
+    font-family: 'Copperplate'; 
+    text-shadow: 1px 1px 2px rgb(0, 251, 255), 0 0 0.2em #00fab8; 
+}
+
+.language:hover { 
+    color: white; 
+}
+
+.sentence {
+    height: 50vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+    color: white; 
+    font-family: 'Papyrus'; 
+    font-size: 36px; 
+}
+
+.button { 
+    display:flex; 
+    align-items: flex-end; 
+    padding-left: 25px; 
+    width: 100px; 
+    height: 75px; 
+    font-size: 36px; 
+    font-family: 'Copperplate'; 
+    text-shadow: 1px 1px 2px rgb(0, 251, 255), 0 0 0.2em #00fab8; 
+}
+
+.button:hover { 
+    color: white; 
+}
+
+.neons {
+    text-align: center;
+}
+
+.neons h1 {
+    font-family: 'Copperplate'; 
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold, italic;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate; 
+}
+
+@-webkit-keyframes glow {
+    from {
+     color: #fff;
+   text-shadow: 0 0 10px #00fab8, 0 0 20px #00fab8, 0 0 30px #00fab8, 0 0 40px #00fab8, 0 0 50px #00fab8, 0 0 60px #00fab8, 0 0 70px #00fab8, 0 0 90px #00fab8;
+ }
+ 
+ to {
+    color: gray;
+   text-shadow: 0 0 20px #00fab8, 0 0 30px #00fab8, 0 0 40px #00fab8, 0 0 50px #00fab8, 0 0 60px #00fab8, 0 0 70px #00fab8, 0 0 80px #00fab8, 0 1 90px #00fab8;
+ }
+}
