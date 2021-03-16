@@ -37,8 +37,7 @@
 
             </div>
 
-            
-
+    
             <h3 class = 'move lit'> "lit" </h3>
             <h3 class = 'move extra'> "extra" </h3>
             <h3 class = 'move salty'> "salty" </h3>
@@ -96,7 +95,7 @@
 
     function animateDiv(myclass){
         var newq = makeNewPosition();
-        $(myclass).animate({ top: newq[0], left: newq[1] }, 2500,   function(){
+        $(myclass).animate({ top: newq[0], left: newq[1] }, 3000,   function(){
         animateDiv(myclass);        
         });
         

@@ -20,10 +20,16 @@ body {
 
 .sentence {
     height: 50vh; 
+    margin-left: 100px; 
+    margin-right:100px; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
+    text-align: center; 
 
+    border-width: 10px;
+    border-style: outset; 
+    border-color: white; 
     color: white; 
     font-family: 'Papyrus'; 
     font-size: 36px; 

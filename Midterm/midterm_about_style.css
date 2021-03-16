@@ -80,6 +80,8 @@ body {
 .paragraph {
     color: white; 
     text-align: center; 
+    font-family: 'Copperplate'; 
+    font-size: 20px; 
 }
 
 .slide {
@@ -96,3 +98,26 @@ body {
 .right { 
     width : 80%; 
 }
+
+@media only screen and (max-width: 1000px) {
+    .presentation {
+      flex-direction: column; 
+    }
+    .nav {
+        flex-direction: row;
+        display:flex; 
+        justify-content: space-between; 
+    }
+    .left {
+        width:100%; 
+    }
+    .right{
+        width:100%; 
+    }
+    .button{
+        margin-top: 150px; 
+    }
+    .slide{
+        margin-top: 50px; 
+    }
+  }
