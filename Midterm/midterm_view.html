@@ -21,9 +21,13 @@
         <div class = "language" onclick = "loopArray()">TRANSLATE</div>
 
         <p style = "color: white; display: flex; align-items: center; justify-content: center; font-style: italic; ">Courtesy of Google Translate</p>
-                
-        <div class = "sentence">
-            Hello, friend. How are you? I hope you enjoy this amazing website. 
+        
+        <div class = "outline">
+
+            <div class = "sentence fade-in" id = "wordy">
+                Hello, friend. How are you? I hope you enjoy this amazing website. 
+            </div>
+
         </div>
 
         <div class = "button" onclick="location.href = 'midterm_index.html'">back</div>
@@ -54,7 +58,7 @@
         }
 
         document.querySelector('.sentence').innerHTML = languageArray[i]; 
-        document.querySelector('.sentence').style.transition = "all 2s ease"; 
+        document.getElementById('wordy').classList.toggle('fade-in'); 
         i++; 
     } 
 </script>

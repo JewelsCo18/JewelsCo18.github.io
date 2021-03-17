@@ -28,6 +28,20 @@ h3 {
 
 .button:hover { 
     color: white; 
+    cursor:pointer;
+}
+
+.movement{
+    width: 100px; 
+    height: 75px; 
+    font-size: 36px; 
+    font-family: 'Copperplate'; 
+    text-shadow: 1px 1px 2px rgb(0, 251, 255), 0 0 0.2em #00fab8; 
+}
+
+.movement:hover { 
+    color: white; 
+    cursor:pointer;
 }
 
 .neons {

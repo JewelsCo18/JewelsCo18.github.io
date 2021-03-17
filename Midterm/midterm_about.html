@@ -25,7 +25,7 @@
                 <div class = "content" onclick = "showConfusion()"> Confusion and Disbelief </div>
                 <div class = "content" onclick = "showNoComplaints()"> Why I Can't Complain </div>
             </div>
-            <div class = "slide right">
+            <div class = "slide right fade-in" id = "slide_container">
                 <img src = "moon.png" class = "photo" id = "currPic" onclick = "location.href='http://www.enle.li/words-1/2017/7/20/words';">
                 <br>
                 <div class = "paragraph" id = "text">
@@ -46,24 +46,28 @@
     function showInspiration() {
         document.getElementById('text').innerText = "When first approached with this project, I was inspired by the 'Words' animation by Enle Li. Seeing the beautiful animation made me reflect my own usage of words. ";
         document.getElementById('currPic').src = "moon.png"; 
-        document.getElementById('currPic').onclick = "location.href='http://www.enle.li/words-1/2017/7/20/words';"; 
+        document.getElementById('currPic').onclick = "location.href='http://www.enle.li/words-1/2017/7/20/words';";
+        document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 
     function showDecline() {
         document.getElementById('text').innerText = "'You cannot, sir, take from me anything that I will not more willingly part withal - except my life, except my life, except my life' - Hamlet";
         document.getElementById('currPic').src = "decline.png"; 
         document.getElementById('currPic').onclick = "location.href='https://medium.com/@theacropolitan/sentence-length-has-declined-75-in-the-past-500-years-2e40f80f589f';"; 
+        document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 
     function showConfusion() {
         document.getElementById('text').innerText = "Jules Kho: WHAT THE F*** IS GUCCI?";
         document.getElementById('currPic').src = "slang.png"; 
         document.getElementById('currPic').onclick = "location.href='https://www.youtube.com/watch?v=fD1xerWGhyY';"; 
+        document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 
     function showNoComplaints() {
         document.getElementById('text').innerText = "'The hard truth is that English, like all other languages, is constantly evolving. It is the speed of the change, within our own short lives, that creates the illusion of decline.' - David Shariatmadari";
         document.getElementById('currPic').src = "words.png"; 
         document.getElementById('currPic').onclick = "location.href='https://www.theguardian.com/science/2019/aug/15/why-its-time-to-stop-worrying-about-the-decline-of-the-english-language';"; 
+        document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 </script>

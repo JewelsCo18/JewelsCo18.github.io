@@ -14,6 +14,7 @@ body {
 
 .button:hover { 
     color: white; 
+    cursor:pointer;
 }
 
 .neons {
@@ -70,6 +71,12 @@ body {
     border-radius: 20%; 
     margin-left: 30px; 
     box-shadow: 3px 3px white, -1em 0 .4em #00fab8;
+    opacity: 1; 
+}
+
+.content:hover{
+    box-shadow: 3px 3px rgb(0, 251, 255), -1em 0 .4em white;
+    cursor: pointer; 
 }
 
 .photo {
@@ -97,6 +104,23 @@ body {
 
 .right { 
     width : 80%; 
+}
+
+.slide.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 1000px) {

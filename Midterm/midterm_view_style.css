@@ -8,7 +8,7 @@ body {
     align-items: center; 
     justify-content: center; 
 
-    color:white; 
+    color:black; 
     font-size: 36px; 
     font-family: 'Copperplate'; 
     text-shadow: 1px 1px 2px rgb(0, 251, 255), 0 0 0.2em #00fab8; 
@@ -16,20 +16,24 @@ body {
 
 .language:hover { 
     color: white; 
+    cursor:pointer;
 }
 
-.sentence {
-    height: 50vh; 
-    margin-left: 100px; 
-    margin-right:100px; 
+.outline { 
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    text-align: center; 
+    text-align: center;
 
+    height: 50vh; 
+    margin-left: 100px; 
+    margin-right:100px; 
     border-width: 10px;
     border-style: outset; 
     border-color: white; 
+}
+
+.sentence {
     color: white; 
     font-family: 'Papyrus'; 
     font-size: 36px; 
@@ -48,6 +52,7 @@ body {
 
 .button:hover { 
     color: white; 
+    cursor:pointer;
 }
 
 .neons {
@@ -74,4 +79,21 @@ body {
     color: gray;
    text-shadow: 0 0 20px #00fab8, 0 0 30px #00fab8, 0 0 40px #00fab8, 0 0 50px #00fab8, 0 0 60px #00fab8, 0 0 70px #00fab8, 0 0 80px #00fab8, 0 1 90px #00fab8;
  }
+}
+
+.sentence.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

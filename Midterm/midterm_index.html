@@ -11,7 +11,7 @@
     <body>
 
         <!-- 
-            Idea: Have words flowing around the screen where every couple seconds 
+            Idea: Have words flowing around the screen every couple seconds 
         -->
 
         <div class = "text_container"> 
@@ -35,6 +35,19 @@
     
                 </div>
 
+                <div class = "row"> 
+
+                    <!-- HAVEN'T FIGURED OUT HOW TO RESTART IT AGAIN-->
+                    <!-- <div class = "movement" onclick = "start()"> 
+                        start
+                    </div> -->
+        
+                    <div class = "movement" onclick = "stop()"> 
+                        stop
+                    </div>
+    
+                </div>
+
             </div>
 
     
@@ -53,14 +66,16 @@
             <h3 class = 'move yeet'> "yeet" </h3>
             <h3 class = 'move cap'> "cap" </h3>
             <h3 class = 'move cancel'> "cancel" </h3>
+
+            
         </div>
-
-
     </body>
 
 </html>    
 
 <script>
+
+    //http://jsfiddle.net/bf9nv1q6/
 
     $(document).ready(function(){
         animateDiv('.lit');
@@ -93,12 +108,23 @@
         
     }
 
+    run = true; 
+
     function animateDiv(myclass){
-        var newq = makeNewPosition();
-        $(myclass).animate({ top: newq[0], left: newq[1] }, 3000,   function(){
-        animateDiv(myclass);        
-        });
-        
+        if (run == true){
+            var newq = makeNewPosition();
+            $(myclass).animate({ top: newq[0], left: newq[1] }, 3500,   function(){
+            animateDiv(myclass);        
+            });
+        }
     };
+
+    // function start(){
+    //     run = true;  
+    // }
+
+    function stop(){
+       run = false; 
+    }
 
 </script>
