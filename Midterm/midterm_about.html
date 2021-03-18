@@ -29,8 +29,7 @@
                 <img src = "moon.png" class = "photo" id = "currPic" onclick = "location.href='http://www.enle.li/words-1/2017/7/20/words';">
                 <br>
                 <div class = "paragraph" id = "text">
-                    When first approached with this project, I was inspired by the 'Words' animation by Enle Li. 
-                    Seeing the beautiful animation made me reflect my own usage of words. 
+                    When first approached with this project, I was inspired by the 'Words' animation by Enle Li. Seeing the beautiful animation made me reflect my own usage of words. <br> <br> I grew up in a family where I had to learn my home language by myself. My family never taught me Tagalog (the main dialect of the Philippines). I learned by listening, reading, and watching books and shows such as Percy Jackson, Downton Abbey, or even Jeporady. <br><br> However, as I aged, most commonly spoken words were not displayed on television nor in books, but on our screens and in common conversations. As an extreme introvert this poses a problem and on a day to day basis, I feel like the old grandma who constantly askes, 'What did you say? What does that mean?'
                 </div>
             </div>
         </div>
@@ -44,30 +43,30 @@
 
 <script>
     function showInspiration() {
-        document.getElementById('text').innerText = "When first approached with this project, I was inspired by the 'Words' animation by Enle Li. Seeing the beautiful animation made me reflect my own usage of words. ";
+        document.getElementById('text').innerText = "When first approached with this project, I was inspired by the 'Words' animation by Enle Li. Seeing the beautiful animation made me reflect my own usage of words." + "\n" + "\n" + "I grew up in a family where I had to learn my home language by myself. My family never taught me Tagalog (the main dialect of the Philippines). I learned by listening, reading, and watching books and shows such as Percy Jackson, Downton Abbey, or even Jeporady." + "\n" + "\n" + "However, as I aged, most commonly spoken words were not displayed on television nor in books, but on our screens and in common conversations. As an extreme introvert this poses a problem and on a day to day basis, I feel like the old grandma who constantly askes, 'What did you say? What does that mean?'";
         document.getElementById('currPic').src = "moon.png"; 
-        document.getElementById('currPic').onclick = "location.href='http://www.enle.li/words-1/2017/7/20/words';";
+        document.getElementById('currPic').setAttribute("onclick", "location.href='http://www.enle.li/words-1/2017/7/20/words';");
         document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 
     function showDecline() {
-        document.getElementById('text').innerText = "'You cannot, sir, take from me anything that I will not more willingly part withal - except my life, except my life, except my life' - Hamlet";
+        document.getElementById('text').innerText = "'You cannot, sir, take from me anything that I will not more willingly part withal - except my life, except my life, except my life' - Hamlet" + "\n" + "\n" + "I will not say that I do not enjoy the speed at which we speak. It's quick. It's to the point and can be done in minimal characters. But English has become so lazy. We use filler words similar to 'like' and 'um' to fill gaps in our sentences and simplify our speech with phrases such as 'I like this' in replacement of 'enamored, enjoyed, fond, admire' all of which have different meanings and contexts." + "\n" + "\n" + "Why must we misconstrue the original meanings of words such as cuffing, extra, or brick?";
         document.getElementById('currPic').src = "decline.png"; 
-        document.getElementById('currPic').onclick = "location.href='https://medium.com/@theacropolitan/sentence-length-has-declined-75-in-the-past-500-years-2e40f80f589f';"; 
+        document.getElementById('currPic').setAttribute("onclick", "location.href='https://medium.com/@theacropolitan/sentence-length-has-declined-75-in-the-past-500-years-2e40f80f589f';");
         document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 
     function showConfusion() {
-        document.getElementById('text').innerText = "Jules Kho: WHAT THE F*** IS GUCCI?";
+        document.getElementById('text').innerText = "Jules Kho: WHAT THE F*** IS GUCCI?" + "\n" + "\n" + "This is a personal annecdote of mine from back in high school. I had recently made some friends who lived in Florida after a school trip and one day, one messaged me stating, 'What's gucci?' I believed they did not understand the brand and responded, 'Do you not know? It's a fashion brand.' I really did not get the term and for hours after, recieved muliple messages stating the same question to which I would always reply, 'Is this a prank or something?'" + "\n" + "\n" + "Even after I found out the true meaning (thanks to the pity of my friend) it's not an uncommon feeling as many times when you aren't caught up on the latest slang, it's not the best feeling as I think to myself, 'I know English, it's my first language, yet I cannot even comprehend what my own friends are stating'" + "\n" + "\n" + "No one teaching you slang, you are expected to learn it yourself, and if you don't know, it's embarassing to recieve the judgement of others as you are not 'cool' enough to have updated yourself on the 'hottest' lingo";
         document.getElementById('currPic').src = "slang.png"; 
-        document.getElementById('currPic').onclick = "location.href='https://www.youtube.com/watch?v=fD1xerWGhyY';"; 
+        document.getElementById('currPic').setAttribute("onclick", "location.href='https://www.youtube.com/watch?v=fD1xerWGhyY';"); 
         document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 
     function showNoComplaints() {
-        document.getElementById('text').innerText = "'The hard truth is that English, like all other languages, is constantly evolving. It is the speed of the change, within our own short lives, that creates the illusion of decline.' - David Shariatmadari";
+        document.getElementById('text').innerText = "'The hard truth is that English, like all other languages, is constantly evolving. It is the speed of the change, within our own short lives, that creates the illusion of decline.' - David Shariatmadari" + "\n" + "\n" + "Unfortuantely, I really can't complain. The Guardian article puts naysayers like me in place. Language in of itself is an evolving creature that waits for no one. It is a testament to the age we will in and encapsulates the minds and thoughts of those who live in this godforsaken Earth." + "\n" + "\n" + "I shouldn't complain. Really I shouldn't. But could someone give this boomer some notice before you judge me on not knowing what the heck a Karen is or what tuff means?";
         document.getElementById('currPic').src = "words.png"; 
-        document.getElementById('currPic').onclick = "location.href='https://www.theguardian.com/science/2019/aug/15/why-its-time-to-stop-worrying-about-the-decline-of-the-english-language';"; 
+        document.getElementById('currPic').setAttribute("onclick", "location.href='https://www.theguardian.com/science/2019/aug/15/why-its-time-to-stop-worrying-about-the-decline-of-the-english-language';"); 
         document.getElementById('slide_container').classList.toggle('fade-in'); 
     }
 </script>
