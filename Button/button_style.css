@@ -1,0 +1,32 @@
+body { 
+    background-image: linear-gradient(45deg, #ebadee, #b1ebb6,#a0ebf4); 
+}
+
+div {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+   
+button {
+    font-size: 24px; 
+    font-family: "Impact"; 
+    width: 300px; 
+    height: 200px;  
+}
+  
+button:hover {
+    background-color: rgb(159, 225, 232);
+    border: 5px solid rgb(0,0,0);
+}
+
+.gif {
+    -webkit-animation: 3s linear 0s infinite alternate move_upDown;
+    animation: 3s linear 0s infinite alternate move_upDown;
+}
+
+@-webkit-keyframes move_upDown { from { margin-top: 5%; } to { margin-top: 70%; }  }
+        @keyframes move_upDown { from { margin-top: 5%; } to { margin-top: 70%; }  }
+
+@-webkit-keyframes move_leftRight{ from { margin-left: -60%; } to { margin-left: 70%; }  }
+    @keyframes move_leftRight{ from { margin-left: -60%; } to { margin-left: 70%; }  }
