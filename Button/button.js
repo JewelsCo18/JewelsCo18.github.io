@@ -31,7 +31,7 @@ function myGreatFunction(){
     
     var randomBorder = getRandomNum(0,100); 
     var randomAngle = getRandomNum(0,180); 
-    var randomColor1 = Math.floor(Math.random()*16777215).toString(16); //#FFFFFF; 
+    var randomColor1 = Math.floor(Math.random()*16777215).toString(16); //we want a hex code like #FFFFFF; 
     var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
     var randomColor3 = Math.floor(Math.random()*16777215).toString(16);
 
