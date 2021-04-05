@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        <title> 🖥 Intro to Web Dev Week 09</title>
+        <link rel="shortcut icon" type="image/png" href=""/>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="hw5_style.css">
+        <script src="hw5_script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class = "block horizontal"> <!--split into two-->
+
+            <div class = "left">
+                <div class= "textBlock">
+                    <br>
+                    <div class = "originalPoem">
+                        A noiseless patient spider,
+                        <br>
+                        I mark’d where on a little promontory it stood isolated,
+                        <br>            
+                        Mark’d how to explore the vacant vast surrounding,
+                        <br>
+                        It launch’d forth filament, filament, filament, out of itself,
+                        <br>
+                        Ever unreeling them, ever tirelessly speeding them.
+                        <br>
+                        <br>
+                        And you O my soul where you stand,
+                        <br>
+                        Surrounded, detached, in measureless oceans of space,
+                        <br>
+                        Ceaselessly musing, venturing, throwing, seeking the spheres to connect them,
+                        <br>
+                        Till the bridge you will need be form’d, till the ductile anchor hold,
+                        <br>
+                        Till the gossamer thread you fling catch somewhere, O my soul.
+                    </div>
+                        
+                    <br>
+                    <div class = "myPoem">
+                        A boisterous energetic spider,
+                        <br>
+                        I mark'd the journey from which it walks
+                        <br>
+                        Mark’d how to create a picture perfect surrounding,
+                        <br>
+                        You eagerly offer yourself, your secrets, your preferences,
+                        <br>
+                        Ever unreeling them, ever tirelessly unleashing them. 
+                        <br>
+                        <br>
+                        And you O my soul where you stand,
+                        <br>
+                        Unwittingly bare for the world to see
+                        <br>
+                        Ceaselessly yearning, learning, connecting, seeking
+                        <br>
+                        Till the bridges you form’d create a collective, no
+                        <br>
+                        Till the revolution strikes, no
+                        <br>
+                        Till the public roar quiets the echoes, O my patient soul.
+                    </div>
+    
+                </div>
+                <div class ="button" onClick="document.getElementById('secondBlock').scrollIntoView();" style = "align-items:flex-end">
+                    <div class = "arrow"></div>
+                </div>
+            </div>
+
+            <div class = "right">
+                <div class = "group">
+                    <h3>our</h3> 
+                    <h2>WORLD WIDE WEB</h2> 
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "block whole" id = "secondBlock"> <!--one whole page-->
+
+            <div class = "quote" id = "word">
+                pervasive
+            </div>
+            
+            <div class ="button" onClick="document.getElementById('thirdBlock').scrollIntoView();">
+                <div class = "arrow" style = "border-color: white;"></div>
+            </div>
+
+        </div>
+
+        <div class ="block vertical" id = "thirdBlock"> <!--vertical split-->
+
+            <div class = "up">
+            </div>
+
+            <div class = "down">
+                We are a society that thrives on connectivity, the pursuit of knowledge, passion. 
+                We are a society that thrives as a collective and seek out those who align with our views.
+                We are a society that is colorful yet black and white 
+                The medium is the massage yes and we reflect the personality of those who live online
+                But did the internet create the divide or humanity? 
+                Did we instigate informatic wars? 
+                Or did it come to fruition because it was accessible? 
+                Who are we to blame for misinformation and the weaponization of words? 
+                Who are we to blame for the catastrophes?
+                Who can mend the broken trust, mental health, racism poisoning the world? 
+                The medium is the message yes and it must reflect the world we desire
+            </div>
+
+        </div>
+  
+    </body>
+</html>

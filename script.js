@@ -5,6 +5,7 @@ var hwIds = [
     "homework4", 
     "midterm", 
     "pair",
+    "homework5", 
 ]
 
 var hwTitles = [
@@ -14,6 +15,7 @@ var hwTitles = [
     "Into Time", 
     "The Common Vernacular", 
     "Javascript Pair Programming", 
+    "The Medium is the Massage",
 ];
 
 var hwRefs = [
@@ -23,6 +25,7 @@ var hwRefs = [
     "Homework_4/slide1_index.html",
     "Midterm/midterm_index.html",
     "Button/index.html",
+    "Homework_5/hw5_index.html", 
 ];
 
 var hwPics = [
@@ -31,6 +34,7 @@ var hwPics = [
     "3.png",
     "4.png",
     "5.png",
+    "5.5.png",
     "6.png",
 ]
 

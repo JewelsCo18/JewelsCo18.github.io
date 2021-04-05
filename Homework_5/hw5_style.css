@@ -1,0 +1,148 @@
+body { 
+    background-color: black; 
+    color:#205d76;
+    font-family: 'Arial Black'; 
+}
+
+.block {
+    height:100vh; 
+}
+
+.button {
+    width: 50px; 
+    height: 50px;
+    text-align: center; 
+    padding-left: 45px; 
+    padding-top: 10px; 
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.horizontal {
+    background-color: #faf8da; 
+    display:flex; 
+    justify-content: space-around; 
+    background-image: url("glitchhand.png");
+    background-size: 100%; 
+
+}
+
+.rect { 
+    left: 50px; 
+    top: 20px; 
+    opacity: 0.3; 
+    position: absolute; 
+    width: 75px; 
+    height: 75vh; 
+    background-color: #ffa09e;  
+}
+
+.vertRect { 
+    left: 50px; 
+    top: 200px; 
+    opacity: 0.3; 
+    position: absolute;  
+    height: 75px; 
+    background-color: #ffa09e;  
+}
+
+.textBlock{ 
+    padding-left: 50px; 
+    height: 90vh;
+    font-size: 36px; 
+    /* text-shadow: #ffa09e 2px 2px; */
+}
+
+.originalPoem {
+    text-align: left; 
+    font-size: 12px; 
+    font-style: italic; 
+    font-family: 'Courier New'; 
+}
+
+.myPoem {
+    text-align: right; 
+    font-size: 18px; 
+}
+
+.left { 
+    width:100vh; 
+    display:flex; 
+    flex-direction: column; 
+}
+
+.right{
+    text-align: right; 
+    width:100vh; 
+    display:flex; 
+    align-items:flex-start;
+    justify-content: flex-end; 
+}
+
+.group {
+    font-size: 24px; 
+    display:flex; 
+    align-items: flex-end;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.hand {
+    height: 100vh; 
+}
+
+.whole {
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-between;  
+    background-image: url("browsing.gif"); 
+    background-size: 100%; 
+    filter: saturate(2); 
+    transition: 200ms ease;
+}
+
+.quote {
+    align-items: center; 
+    color: rgb(0,0,0);  
+    vertical-align: center; 
+    font-size: 150px; 
+    font-style: italic; 
+    -webkit-animation: 7s linear 0s infinite alternate moveWord;
+    animation: 7s linear 0s infinite alternate moveWord;
+}
+
+@-webkit-keyframes moveWord { from { margin-left: -30%; } to { margin-left: 100%; }  }
+        @keyframes moveWord { from { margin-left: -30%; } to { margin-left: 100%; }  }
+
+.vertical {
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column; 
+}
+
+.up {
+    background-color: black; 
+    height: 75vh; 
+    display:flex; 
+    flex-direction: column;  
+    background-image: url("protest.jpeg"); 
+}
+
+.down {
+    height: 25vh;
+    display:flex; 
+    flex-direction: column; 
+    background-color: black; 
+    color: white; 
+    text-align: center;  
+    align-items:center; 
+    transform: rotate(180deg); 
+    font-size: 20px; 
+}
