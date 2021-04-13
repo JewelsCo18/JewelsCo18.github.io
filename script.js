@@ -6,6 +6,7 @@ var hwIds = [
     "midterm", 
     "pair",
     "homework5", 
+    "homework6",
 ]
 
 var hwTitles = [
@@ -16,6 +17,7 @@ var hwTitles = [
     "The Common Vernacular", 
     "Javascript Pair Programming", 
     "The Medium is the Massage",
+    "Tic Tac Toe: Alien Style",
 ];
 
 var hwRefs = [
@@ -26,6 +28,7 @@ var hwRefs = [
     "Midterm/midterm_index.html",
     "Button/index.html",
     "Homework_5/hw5_index.html", 
+    "Homework_6/tictactoe_index.html", 
 ];
 
 var hwPics = [
@@ -36,6 +39,7 @@ var hwPics = [
     "5.png",
     "5.5.png",
     "6.png",
+    "tbd.png", 
 ]
 
 function showPage(id, num){
