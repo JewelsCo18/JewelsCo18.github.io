@@ -47,6 +47,11 @@ h1 {
     height: 18vh; 
 }
 
+.header {
+    width: 35%; 
+    height: 35%; 
+}
+
 h2 { 
     margin-top: 2px; 
     font-size: 20px;
