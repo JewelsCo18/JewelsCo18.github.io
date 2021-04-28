@@ -7,6 +7,7 @@ var hwIds = [
     "pair",
     "homework5", 
     "homework6",
+    "final",
 ]
 
 var hwTitles = [
@@ -18,6 +19,7 @@ var hwTitles = [
     "Javascript Pair Programming", 
     "The Medium is the Massage",
     "Tic Tac Toe: Alien Style",
+    "Sound of Life", 
 ];
 
 var hwRefs = [
@@ -29,6 +31,7 @@ var hwRefs = [
     "Button/index.html",
     "Homework_5/hw5_index.html", 
     "Homework_6/tictactoe_index.html", 
+    "Final/final_index.html", 
 ];
 
 var hwPics = [
@@ -39,6 +42,7 @@ var hwPics = [
     "5.png",
     "5.5.png",
     "6.png",
+    "7.png",
     "tbd.png", 
 ]
 
