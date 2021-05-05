@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="childhood_style.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+        <script src="childhood_script.js"></script>
+    </head>
+
+    <body>
+
+      
+
+      <div class = "header" onclick = "returnHome()">
+        The Sounds of Life
+      </div>
+ 
+      <br>
+      <br>
+
+      <div class = "container">
+        <div class = "bookCase">
+            
+            <audio controls autoplay style = "width: 400px" id = "book-music">
+              <source src="music/songOfIndia.mp3" type="audio/mpeg">
+            </audio>
+            <br>
+            <br>
+            <br>
+
+            <div class = "books">
+              <div class = "book" onclick = "chooseBook()"></div>
+              <div class = "book" onclick = "chooseBook()"></div>        
+              <div class = "book" onclick = "chooseBook()"></div>       
+              <div class = "book" onclick = "chooseBook()"></div>  
+              <div class = "book" onclick = "chooseBook()"></div>  
+              <div class = "book" onclick = "chooseBook()"></div>  
+            </div> 
+
+            <div class = "button" id = "button" onclick = "hideBook()">
+              Hide
+            </div>
+        </div>
+
+        <div class = "pdf" id = "pdfViewer">
+          <iframe id = "book-pdf" src="pdfs/thief.pdf" width="1000px" height="700px"></iframe>
+        </div>  
+    </div>
+
+      
+    </body>
+
+</html>    

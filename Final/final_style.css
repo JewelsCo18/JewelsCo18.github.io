@@ -1,0 +1,157 @@
+body{
+  margin: 0px; 
+  background-image: url('sky.gif'); 
+  background-size: 100%;
+}
+
+.header { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  color: white; 
+  font-family: 'Poiret One'; 
+  font-weight: bold; 
+  font-size: 36px; 
+  padding: 10px; 
+  cursor: pointer; 
+}
+
+.navigator{
+  display:flex; 
+  flex-direction: row;
+}
+
+.tab { 
+  opacity: 0.85; 
+  width:20%; 
+  height: 90vh; 
+  overflow: hidden;
+  font-size: 40px; 
+  font-family: 'Poiret One'; 
+  font-style: italic; 
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  transition: width 0.5s ease-out;
+}
+
+.tab:hover{
+  opacity: 1; 
+  width: 250%;
+  transition: width 0.5s ease-in;
+}
+
+.tab-content{
+  padding-top: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  padding: 10px; 
+}
+
+/* .tab-song{
+  display:flex; 
+  justify-content: center; 
+  align-items: center;
+  position: static; 
+  margin-top: 50px; 
+} */
+
+.song {
+  filter: saturate(0);
+}
+
+#bep{
+  margin-top: 15px; 
+  width: 425px; 
+  height: 425px; 
+}
+
+#wings{
+  margin-top: -50px; 
+  width: 550px; 
+  height: 550px; 
+}
+
+#vogue{
+  margin-top:-100px; 
+  width: 450px; 
+  height: 650px; 
+  
+}
+
+#rr{
+  margin-top: -50px; 
+  width: 550px; 
+  height: 550px; 
+}
+
+#max{
+  margin-top: 15px; 
+  width: 425px; 
+  height: 425px; 
+}
+
+.album {
+  display:flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px; 
+}
+
+.content{
+  width: 500px; 
+  height: 500px;
+  display:flex; 
+  align-items: center; 
+  justify-content: center;
+  display: none; 
+}
+
+.quote {
+  font-family:'Lucida Sans'; 
+  font-size: 20px;  
+}
+
+.inner-content{
+  padding-left:10px; 
+  display:flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.button{
+  font-size: 24px; 
+  color: white; 
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height:75px; 
+  background-image: url("images/sky_background.jpg"); 
+  background-size: 100%; 
+  border-radius: 25px;
+  cursor: pointer; 
+}
+
+.child {
+  background-color: #f4887b; 
+}
+
+.yt {
+  background-color:#1f6679; 
+  color: white; 
+}
+
+.ot {
+  background-color: #9f7f94; 
+}
+
+.ya {
+  background-color: #0e374a; 
+  color: white; 
+}
+
+.now {
+  background-color: #4b9596; 
+}

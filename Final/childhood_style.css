@@ -1,0 +1,75 @@
+body{
+    background-image: url("images/book.jpg"); 
+    background-size: 45%;
+    background-position-x: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+.header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: black; 
+    font-family: 'Poiret One'; 
+    font-weight: bold; 
+    font-size: 36px; 
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.bookCase {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.books{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: -50px;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.book{
+  background-image: url("images/spine.jpg"); 
+  background-size: 100%; 
+  width: 10vh; 
+  height: 45vh; 
+  border-radius: 30px;
+  cursor: pointer; 
+}
+
+#pdfViewer {
+  display: none; 
+}
+
+#button{
+  display: none; 
+}
+
+.button{
+  font-size: 14px; 
+  color: white; 
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  width: 100px;
+  height:25px; 
+  background-image: url("images/sky_background.jpg"); 
+  background-size: 100%; 
+  border-radius: 25px;
+  cursor: pointer; 
+}

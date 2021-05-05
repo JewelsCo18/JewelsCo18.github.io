@@ -1,0 +1,17 @@
+body{
+    margin: 0px; 
+    background-image: url('sky.gif'); 
+    background-size: 100%;
+  }
+  
+.header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: white; 
+    font-family: 'Poiret One'; 
+    font-weight: bold; 
+    font-size: 36px; 
+    padding: 10px; 
+    cursor: pointer; 
+}

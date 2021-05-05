@@ -1,0 +1,36 @@
+body{
+    background-image: url("images/howl.jpeg"); 
+    background-size: 100%;
+    background-position-x: center;
+  }
+  
+.header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: black; 
+    font-family: 'Poiret One'; 
+    font-weight: bold; 
+    font-size: 36px; 
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.myCarousel{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+.flex-box #myCarousel{
+    flex: 1 1 50%
+}
+
+.flex-box #desc {
+    flex: 1 1 50%;
+}

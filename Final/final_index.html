@@ -1,79 +1,194 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/final_style.css">
+<html> 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/final_script.js"></script>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="final_style.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="final_script.js"></script>
+    </head>
 
-  </head>
+    <body>
 
-  <body>
-
-    <video class = "fullVideo" controls autoplay>
-        <source src="music/sky.mp4" type="video/mp4">
-     </video> 
-
-    <div class = "main-content" id = "overlay">
-        <h1> Enter</h1>
-    </div>
-
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
+      <div class = "header" onclick = "returnHome()">
+        The Sounds of Life
       </div>
 
+      <div class = "navigator">
 
+        <div class = "tab child" id = "childhood">
+          <div class = "tab-content">
+            A Book Nerd
 
-      <header class="site-navbar site-navbar-target py-4" role="banner">
+            <div class = "album" id = "childhood-description">
 
-        <div class="container">
-          <div class="row align-items-center position-relative">
+              <div class = "tab-song" >
+                <img class = "song" id = "bep" src = "images/BEP.jpg">
+              </div>
 
-            <div class="col-3">
-              <div class="site-logo">
-                <a href="index.html" class="font-weight-bold text-white">The Sound of Life</a>
+              <div class = "content" id = "bep-content">
+                <div class = "inner-content">
+                  Simple Little Melody by The Black Eyed Peas
+                  <br>
+                  <br>
+                  <audio controls style = "width: 500px" id = "bep-song">
+                    <source src="music/Black Eyed Peas - Simple Little Melody HQ (with Lyrics, Downloadlink).mp3" type="audio/mpeg">
+                  </audio>
+                  <br>
+                  <div class = "quote">
+                    “I do not miss childhood, but I miss the way I took pleasure in small things, 
+                    even as greater things crumbled. I could not control the world I was in, could 
+                    not walk away from things or people or moments that hurt, but I took joy in the 
+                    things that made me happy.” - Neil Gaiman, author of Stardust
+                  </div> 
+
+                  <br>
+                  <div class = "button" onclick = "goTo('childhood.html')">
+                    ONWARDS!
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-9  text-right">
-              
+        </div>
 
-              <span class="d-inline-block d-lg-block"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
+        <div class = "tab yt" id = "young-teen">
+          <div class = "tab-content" id = "title">
+            K-Pop Weeaboo
+          
+            <div class = "album" id = "yt-description">
 
-              
+              <div class = "tab-song" >
+                <img class = "song" id = "wings" src = "images/wings.jpg">
+              </div>
 
-              <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="proposal_index.html" class="nav-link">Proposal</a></li>
-                </ul>
-              </nav>
+              <div class = "content" id = "wings-content">
+                <div class = "inner-content">
+                  Simple Little Melody by The Black Eyed Peas
+                  <br>
+                  <br>
+                  <audio controls style = "width: 500px">
+                    <source src="music/House Of Cards (full length edition).mp3" type="audio/mpeg">
+                  </audio>
+                  <br>
+                  <div class = "quote">
+                    uwu I'm a BTS stan fight me
+                  </div> 
+
+                  <br>
+                  <div class = "button" onclick = "goTo('young-teen.html')">
+                    行くぞ
+                  </div>
+
+                </div>
+              </div>
             </div>
-
-            
           </div>
         </div>
 
-      </header>
-      
-  </body>
-</html>
+        <div class = "tab ot" id = "older-teen" >
+          <div class = "tab-content" id = "title">
+            Fashion Freak
 
+            <div class = "album" id = "ot-description">
+
+              <div class = "tab-song" >
+                <img class = "song" id = "vogue" src = "images/vogue.jpg">
+              </div>
+
+              <div class = "content" id = "vogue-content">
+                <div class = "inner-content">
+                  Vogue by Madonna
+                  <br>
+                  <br>
+                  <audio controls style = "width: 500px">
+                    <source src="music/Madonna - Vogue [Official Music Video].mp3" type="audio/mpeg">
+                  </audio>
+                  <br>
+                  <div class = "quote">
+                    “Fashion is the armor to survive the reality of everyday life" -Bill Cunningham, fashion photographer for NYTimes
+                  </div> 
+
+                  <br>
+                  <div class = "button" onclick = "goTo('older-teen.html')">
+                    Go
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "tab ya" id = "young-adult">
+          <div class = "tab-content" id = "title">
+            Adulting?
+
+            <div class = "album" id = "ya-description">
+              <div class = "tab-song" >
+                <img class = "song" id = "rr" src = "images/Raleigh.jpg">
+              </div>
+
+              <div class = "content" id = "rr-content">
+                <div class = "inner-content">
+                  Time in a Tree by Ralgeigh Ritchie
+                  <br>
+                  <br>
+                  <audio controls style = "width: 500px">
+                    <source src="music/Time in a Tree.mp3" type="audio/mpeg">
+                  </audio>
+                  <br>
+                  <div class = "quote">
+                    Oh shit, I gotta pay taxes now.                   
+                  </div>
+                  
+                  <br>
+                  <div class = "button" onclick = "goTo('ya.html')">
+                    Help
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class = "tab now" id = "now">
+          <div class = "tab-content" id = "title">
+            A Fresh Start
+
+            <div class = "album" id = "ya-description">
+
+              <div class = "tab-song" >
+                <img class = "song" id = "max" src = "images/max.jpg">
+              </div>
+
+              <div class = "content" id = "max-content">
+                <div class = "inner-content">
+                  New Life by MAX
+                  <br>
+                  <br>
+                  <audio controls style = "width: 500px">
+                    <source src="music/New Life.mp3" type="audio/mpeg">
+                  </audio>
+                  <br>
+                  <div class = "quote">
+                    To new beginnings, filled with cats, code, and a cup of tea!               
+                  </div>
+                  
+                  <br>
+                  <div class = "button" onclick = "goTo('now.html')" >
+                    Begin a new adventure!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </body>
+
+</html>    
