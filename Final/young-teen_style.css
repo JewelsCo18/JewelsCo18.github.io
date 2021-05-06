@@ -1,14 +1,14 @@
 body{
-    background-image: url("images/howl.jpeg"); 
+    /* background-image: url("images/howl.jpeg"); 
     background-size: 100%;
-    background-position-x: center;
-  }
+    background-position-x: center; */
+}
   
 .header { 
     display: flex; 
     align-items: center; 
     justify-content: center;
-    color: black; 
+    color: white; 
     font-family: 'Poiret One'; 
     font-weight: bold; 
     font-size: 36px; 
@@ -21,6 +21,18 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.item {
+    display: none;
+    position: relative;
+    
+}
+
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 10s ease;
+    transition: transform 10s ease;
+    transition: transform 10s ease, -webkit-transform 10s ease;
+  }
 
 .flex-box {
     display: flex;

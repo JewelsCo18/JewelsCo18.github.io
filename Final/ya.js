@@ -2,13 +2,18 @@ function returnHome(){
     window.location.href = "final_index.html";
 }
 
+function oofClick(){
+    var audio = new Audio("music/Roblox Death Sound - Sound Effect (HD).mp3"); 
+    audio.play(); 
 
-//FIGURE THIS OUT!!
-// $(function() {
-//     $('#button').hover(function() {
-//         $("#column").css("background-color", "rgba( 255,255,255, 1)");
-//     }, function() {
-//       // on mouseout, reset the background colour
-//       $("#column").css("background-color", "rgba( 255,255,255, 0.8)");
-//       });
-//   });
+    startTimer(); 
+}
+
+function go(){
+    location.href='https://www.youtube.com/watch?v=vXZQYtb6G5k';
+}
+
+function startTimer() {
+    //5 seconds
+    setInterval(go, 1500);
+}

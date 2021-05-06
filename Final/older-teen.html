@@ -9,20 +9,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="older-teen_script.js"></script>
     </head>
 
-    <body>
+    <body id = "body">
 
-      <div class = "header" onclick = "returnHome()">
-        The Sounds of Life
+      <div class = "slides">
+        <div class = "movingPhoto1">
+            <img class = "photo" id = "image1" src = "images/chanel1.jpeg">
+        </div>
+
+        <div class = "movingPhoto2">
+            <img class = "photo" id = "image2" src = "images/saab2.jpeg">
+        </div>
       </div>
 
-      <!--
-          FIGURE THIS ONE OUT LATER
-      -->
-
+      <div class = "header" id = "header" onclick = "returnHome()">
+            The Sounds of Life
+            <br>
+            <audio controls autoplay style = "width: 300px" >
+                <source src="music/Own The Runway Mix - Deep house and Electro.mp3" type="audio/mpeg">
+            </audio>
+      </div>
+    
     </body>
 
 </html>    

@@ -1,6 +1,6 @@
 body{
     margin: 0px; 
-    background-image: url('sky.gif'); 
+    background-image: url('images/pattern.jpeg'); 
     background-attachment: fixed;
     background-repeat: none;
     background-size: 100%;
@@ -16,6 +16,7 @@ body{
     display: flex; 
     align-items: center; 
     justify-content: center;
+    background-color: black; 
     color: white; 
     font-weight: bold; 
     font-size: 36px; 
@@ -32,13 +33,18 @@ body{
 }
 
 .column{
-    background-color: rgba( 255,255,255, 0.8); 
+    background-color:white; 
     display:flex; 
     align-items: center; 
     flex-direction: column; 
     justify-content: center;
     border-radius: 25px; 
     box-shadow: 10px 5px 5px #0e374a;
+}
+
+.column:hover {
+    background-color: grey; 
+    color: white; 
 }
 
 .card { 

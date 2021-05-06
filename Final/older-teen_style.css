@@ -1,17 +1,62 @@
-body{
+#body {
     margin: 0px; 
-    background-image: url('sky.gif'); 
-    background-size: 100%;
-  }
+    background-color: #9f7f94;
+    transition: background-color 2s; 
+}
   
 .header { 
+    position:fixed; 
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    top: 40vh; 
+    right: 40%;
     color: white; 
     font-family: 'Poiret One'; 
     font-weight: bold; 
     font-size: 36px; 
     padding: 10px; 
     cursor: pointer; 
+}
+
+.photo {
+    filter: saturate(0); 
+    max-height: 100vh ; 
+}
+
+.slides {
+    width: 100%; 
+    height: 400px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movingPhoto1 {
+    padding: 0px; 
+    position: relative;
+    animation-name: movementDown;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.movingPhoto2 {
+    padding: 0px; 
+    position: relative;
+    animation-name: movementUp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movementDown {
+    0%   { top:-130vh; }
+    50%  { top: 190px; }
+    100%  { top:130vh; }
+}
+
+@keyframes movementUp {
+    0%   { top: 130vh; }
+    50%  { top: 190px; }
+    100%  { top:-130vh; }
 }

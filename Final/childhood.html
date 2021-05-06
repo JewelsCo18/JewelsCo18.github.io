@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="childhood_style.css"/>
         <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="childhood_script.js"></script>
     </head>
 
@@ -23,20 +24,24 @@
       <div class = "container">
         <div class = "bookCase">
             
-            <audio controls autoplay style = "width: 400px" id = "book-music">
+            <audio controls autoplay loop muted style = "width: 400px" id = "book-music">
               <source src="music/songOfIndia.mp3" type="audio/mpeg">
             </audio>
+
+            <div id = "songName"> 
+              Song of India by Nikolai Rimsky-Korsakov 
+            </div>
             <br>
             <br>
             <br>
 
             <div class = "books">
-              <div class = "book" onclick = "chooseBook()"></div>
-              <div class = "book" onclick = "chooseBook()"></div>        
-              <div class = "book" onclick = "chooseBook()"></div>       
-              <div class = "book" onclick = "chooseBook()"></div>  
-              <div class = "book" onclick = "chooseBook()"></div>  
-              <div class = "book" onclick = "chooseBook()"></div>  
+              <div class = "book" id = "hover-book" onclick = "chooseBook(0)"></div>
+              <div class = "book" id = "hover-book" onclick = "chooseBook(1)"></div>        
+              <div class = "book" id = "hover-book" onclick = "chooseBook(2)"></div>       
+              <div class = "book" id = "hover-book" onclick = "chooseBook(3)"></div>  
+              <div class = "book" id = "hover-book" onclick = "chooseBook(4)"></div>  
+              <div class = "book" id = "hover-book" onclick = "chooseBook(5)"></div>  
             </div> 
 
             <div class = "button" id = "button" onclick = "hideBook()">
