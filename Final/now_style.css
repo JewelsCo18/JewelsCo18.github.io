@@ -8,6 +8,8 @@ body{
     display: flex; 
     align-items: center; 
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     color: black; 
     font-family: 'Poiret One'; 
     font-weight: bold; 
@@ -25,7 +27,6 @@ body{
 .item {
   display: none;
   position: relative;
-  
 }
 
 .carousel-inner .carousel-item {
