@@ -43,7 +43,7 @@ var hwPics = [
     "5.5.png",
     "6.png",
     "7.png",
-    "tbd.png", 
+    "8.png", 
 ]
 
 function showPage(id, num){
