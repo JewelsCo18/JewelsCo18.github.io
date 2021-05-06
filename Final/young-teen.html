@@ -13,72 +13,53 @@
         <script src="young-teen_script.js"></script>
     </head>
 
-    <body style = "background-color: #1f6679; ">
+    <body id = "body">
 
       <div class = "header" onclick = "returnHome()">
         The Sounds of Life
       </div>
 
-      <div class="container-fluid"  style = "width: 80%; height: 800px; "> 
-        <div class="row">
-          <div class="flex-box">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
-              </ol>
-      
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
-                <div class="item active">
-                  <iframe width="100%" height="800px" src="https://www.youtube.com/embed/x8D4lzb4D1k"></iframe>
-                </div>
-      
-                <div class="item">
-                 <iframe width="100%" height="800px" src="https://www.youtube.com/embed/p8npDG2ulKQ"></iframe>
-                </div>
-      
-                <div class="item">
-                  <iframe width="100%" height="800px" src="https://www.youtube.com/embed/btjZSN_MsoA"></iframe>
-                </div>
+      <div class = "middle-container">
+        <div class = "column side">
+           <div class = "inner-column">
+              <img class = "icon" id = "fairytail" src = "images/natsu.png" onclick = "changeCenter('fairytail')">
+              <img class = "icon" id = "overlord" src = "images/albedo.png" onclick = "changeCenter('overlord')">
+              <img class = "icon" id = "sao" src = "images/kirito.jpeg" onclick = "changeCenter('sao')">
+           </div>
+           <div class = "inner-column">
+            <img class = "icon" id = "seven" src = "images/meliodas.jpeg" onclick = "changeCenter('seven')">
+            <img class = "icon" id = "demon" src = "images/nezuko.jpg" onclick = "changeCenter('demon')">
+            <img class = "icon" id = "yourName" src = "images/yourName.jpeg" onclick = "changeCenter('yourName')">
+           </div>
+            
+        </div>
 
-                <div class="item">
-                    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/3UGMDJ9kZCA"></iframe>
-                </div>
+        <div class = "column middle">
+          <iframe width="610px" height="610px" id = "screen"
+            src="https://www.youtube.com/embed/x8D4lzb4D1k?autoplay=1&mute=1">
+          </iframe>
+          <!-- <iframe width="610px" height="610px" id = "screen"
+            src="https://www.youtube.com/embed/x8D4lzb4D1k">
+          </iframe> -->
+        </div>
 
-                <div class="item">
-                    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/Qek2jOHRGXY"></iframe>
-                </div>
-
-                <div class="item">
-                    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/Oz3mm3tPKfg"></iframe>
-                </div>
-
-                <div class="item">
-                    <iframe width="100%" height="800px" src="https://www.youtube.com/embed/pFrKZxStL_U"></iframe>
-                </div>
-                
-              </div>
-      
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+        <div class = "column side">
+          <div class = "inner-column">
+              <img class = "icon" id = "bts" src = "images/bts.jpg" onclick = "changeCenter('bts')">
+              <img class = "icon" id = "blackpink" src = "images/blackpink.jpeg" onclick = "changeCenter('blackpink')">
+              <img class = "icon" id = "nct" src = "images/nct.jpg" onclick = "changeCenter('nct')">
           </div>
+          
+          <div class = "inner-column">
+              <img class = "icon" id = "redvelvet" src = "images/redvelvet.jpeg" onclick = "changeCenter('redvelvet')">
+              <img class = "icon" id = "taemin" src = "images/taemin.jpeg" onclick = "changeCenter('taemin')">
+              <img class = "icon" id = "day6" src = "images/day6.jpeg" onclick = "changeCenter('day6')">
+          </div>
+          
+          
         </div>
       </div>
+      
 
     </body>
 

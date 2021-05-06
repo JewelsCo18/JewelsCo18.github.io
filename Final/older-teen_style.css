@@ -21,7 +21,6 @@
 }
 
 .photo {
-    filter: saturate(0); 
     max-height: 100vh ; 
 }
 
