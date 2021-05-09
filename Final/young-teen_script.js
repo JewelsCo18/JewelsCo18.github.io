@@ -29,13 +29,30 @@ videos = [
 
 ]
 
+videoIDs = [
+    "fairytail", 
+    "overlord", 
+    "sao", 
+    "seven", 
+    "demon",
+    "yourName", 
+    "bts", 
+    "blackpink", 
+    "nct", 
+    "redvelvet", 
+    "taemin", 
+    "day6", 
+]
+
 function returnHome(){
     window.location.href = "final_index.html";
 }
 
-video = false; 
+prevIcon = ""; 
+
 function changeCenter(id){
-    if (video == false){
+    if (prevIcon != id ){
+        //console.log("NEW"); 
         if (id == "fairytail"){
             document.getElementById("screen").src = videos[0]; 
         }
@@ -77,13 +94,20 @@ function changeCenter(id){
         document.getElementById(id).style.border = "5px"; 
         document.getElementById(id).style.borderStyle = "dashed"; 
         document.getElementById(id).style.borderColor = "##1f6679"; 
-        video = true; 
+
+        if (prevIcon != ""){
+            document.getElementById(prevIcon).style.border = "none"; 
+        }
+        
+        prevIcon = id; 
     }
     else{
+        //console.log("ELSE"); 
         document.getElementById("body").style = "initial"; 
         document.getElementById(id).style.border = "none"; 
         //document.getElementById("screen").src = "https://www.youtube.com/embed/x8D4lzb4D1k?autoplay=1&";
         document.getElementById("screen").src = "https://www.youtube.com/embed/x8D4lzb4D1k"; 
+        prevIcon = ""; 
     }
 }
   

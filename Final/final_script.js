@@ -86,6 +86,9 @@ function hoverChange(currName){
     $(currName).css("width", "450px");
     $(currName).css("height", "600px");
   }
+  else if (currName == "bep" || currName == "max"){
+    $(currName).css("margin-top", "-100"); 
+  }
   else{
     $(currName).css("width", "500px");
     $(currName).css("height", "500px");
